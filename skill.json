@@ -1,0 +1,44 @@
+{
+  "name": "shipping-carrier-selector-skill",
+  "version": "1.0.0",
+  "description": "Select the optimal delivery carrier based on target country code, package weights, and delivery urgency constraints.",
+  "author": "alphaparkinc",
+  "category": "logistics",
+  "tags": [
+    "logistics",
+    "shipping",
+    "carrier-routing",
+    "checkout",
+    "fulfillment"
+  ],
+  "inputs": {
+    "country_code": {
+      "type": "string",
+      "description": "ISO country code (e.g. US, DE, JP)."
+    },
+    "package_weight_lbs": {
+      "type": "number",
+      "description": "Total box weight in lbs."
+    },
+    "delivery_urgency": {
+      "type": "string",
+      "enum": [
+        "standard",
+        "express"
+      ],
+      "description": "Fulfillment speed requirement."
+    }
+  },
+  "outputs": {
+    "selected_carrier": {
+      "type": "string",
+      "description": "Target assigned courier provider name."
+    },
+    "shipping_method_label": {
+      "type": "string",
+      "description": "Fulfillment speed classification label."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
