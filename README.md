@@ -1,4 +1,4 @@
-# shipping-carrier-selector-skill
+# genpark-shipping-carrier-selector-skill
 
 > **GenPark AI Agent Skill** -- Shipping logistics courier selector.
 
