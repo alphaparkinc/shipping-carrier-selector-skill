@@ -1,5 +1,5 @@
 {
-  "name": "shipping-carrier-selector-skill",
+  "name": "genpark-shipping-carrier-selector-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Select the optimal delivery carrier based on target country code, package weights, and delivery urgency constraints.",
   "author": "genpark",
